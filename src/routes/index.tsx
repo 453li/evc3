@@ -256,7 +256,7 @@ const QUIZ = [
 
 function S5() {
   const [ans, setAns] = useState<(boolean | null)[]>([null, null, null]);
-  const score = ans.filter((v, k) => v === QUIZ[k].a).length;
+  const score = ans.filter((v, k) => v === QUIZ[k]?.a).length;
   return (
     <div>
       <H>Quick Guess Game: True or False?</H>
