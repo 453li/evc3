@@ -18,12 +18,12 @@ export const Route = createFileRoute("/")({
 });
 
 const SCRIPTS = [
-  "Hello everyone! Today we ask: Will electric cars replace fuel cars? Let's find out together.",
-  "Look at these real numbers from the global market. About 25 to 30 percent of new cars sold today are electric. Traditional fuel cars still lead with around 50 percent, while hybrids take 20 percent.",
-  "Let's compare them simply. Electric cars are fast, clean, and need less maintenance. But fuel cars are great for long trips because refilling takes only 3 minutes.",
-  "What about the future? By 2040, electric cars may reach 80 percent. New batteries will charge in 10 minutes. But fuel engines will not die completely; clean synthetic fuels will keep them alive.",
-  "Let's play a quick guessing game! Answer True or False to these three quick questions about cars.",
-  "To finish, what will you drive in 2035? In conclusion, electric cars will lead our cities, but they will work together with hybrids and clean fuels. Thank you all!",
+  "Good morning everyone, and welcome to our presentation today. We are looking at a very exciting and important question in our modern world: Will electric cars completely replace traditional fuel cars? Over the next few minutes, we will look at real market numbers, compare the pros and cons, explore future technology, and play a fun guessing game together. Let's begin!",
+  "Before we talk about the future, let's look at the real market today. According to recent global data, electric cars make up about 25 to 30 percent of new car sales. Traditional fuel cars still lead with around 50 to 55 percent, while hybrid cars take about 20 percent. This shows us that the transition is happening step by step, not overnight.",
+  "Now, let's compare both types of cars in four simple areas. First, electric cars give us instant speed and powerful acceleration, while fuel cars give us the classic engine sound. Second, fuel cars win easily when it comes to refueling—taking only 3 minutes at a station compared to 20 or 40 minutes for electric charging. Third, electric cars save a lot of money on maintenance because they have fewer moving parts and need no oil changes. Finally, electric cars keep our city air clean with zero tailpipe smoke.",
+  "What does the future hold for us? If we look at this projection chart, electric car sales are expected to reach around 80 percent by the year 2040. Why? Because new solid-state batteries are coming soon, offering over 1,000 kilometers of range on a single charge and charging in just 10 minutes. However, traditional fuel engines are not disappearing completely; car makers are developing clean synthetic fuels and hydrogen so normal engines can survive without harming the environment.",
+  "It is time for a quick guessing game to test your focus! I will ask you three quick questions, and you can tell me if they are True or False. Let's see how well you were listening to the facts about electric acceleration, refuelling times, and future sales predictions. Raise your voices and let's play!",
+  "To wrap up our presentation today, let's complete our exit ticket. Did anyone change their mind after seeing the facts? Let's take a quick final vote and hear your predictions on what car you will drive in the year 2035. In conclusion, electric cars will lead our daily city driving, but they will work together with hybrids and clean fuels on our roads. Thank you all so much for listening and participating!",
 ];
 const TOTAL = SCRIPTS.length;
 
@@ -210,9 +210,9 @@ function S4() {
   const y = (v: number) => Hh - P - (v / 100) * (Hh - 2 * P);
   const path = pts.map((p, k) => `${k ? "L" : "M"}${x(k)},${y(p.v)}`).join(" ");
   const cards = [
-    { t: "🔋 Better Batteries", d: "Cars may travel 1,000 km on one charge and charge in 10 minutes." },
+    { t: "🔋 Better Batteries", d: "New solid-state batteries will let cars travel 1,000 km on one charge and charge in 10 minutes." },
     { t: "📜 New Laws", d: "Many countries plan to stop selling new petrol-only cars by 2035." },
-    { t: "🧪 Clean Fuel (e-Fuels)", d: "Clean synthetic fuels can keep normal engines running cleanly." },
+    { t: "🧪 Clean Fuel (e-Fuels)", d: "Car makers are building clean synthetic fuels to keep normal engines running cleanly." },
   ];
   return (
     <div>
